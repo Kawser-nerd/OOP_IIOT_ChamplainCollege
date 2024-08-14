@@ -55,7 +55,7 @@ class Car(Automobile):
 
     def get_no_of_doors(self):
         return self.__no_of_doors
-
+    
     def __str__(self):
         return (f'The make of the car is {self.get_make()} and the model of the car is {self.get_model()} the mileage is {self.get_mileage()}'
                 f' and the price is {self.get_price()}, the number of doors is {self.get_no_of_doors()}')
