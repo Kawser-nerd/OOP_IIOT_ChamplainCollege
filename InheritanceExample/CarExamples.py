@@ -72,7 +72,7 @@ class SUV(Automobile):
         return self.__passenger_capacity
 
     def __str__(self):
-        return (f'The make of the car is {self.get_make()} and the model of the car is {self.get_model()} the mileage is {self.get_mileage()}'
+        return (f'The make of the SUV is {self.get_make()} and the model of the car is {self.get_model()} the mileage is {self.get_mileage()}'
                 f' and the price is {self.get_price()} and the passenger_capacity is {self.get_passenger_capacity()}')
 
 class Truck(Automobile):
@@ -87,5 +87,27 @@ class Truck(Automobile):
         return self.__drive_type
 
     def __str__(self):
-        return (f'The make of the car is {self.get_make()} and the model of the car is {self.get_model()} the mileage is {self.get_mileage()}'
+        return (f'The make of the Truck is {self.get_make()} and the model of the car is {self.get_model()} the mileage is {self.get_mileage()}'
                 f' and the price is {self.get_price()} and the drive type is {self.get_drive_type()}')
+
+if __name__ == '__main__':
+    car1 = Car('Toyato', 'Camry', 127500, 12000, 4)
+    car2 = Car('Ford', 'Torus', 210000, 7000, 4)
+
+    suv1 = SUV('Toyato', 'Rav4', 85000, 15000, 5)
+    suv2 = SUV('Ford', 'Flex', 145897, 18000, 8)
+
+    truck1 = Truck('Nissan', 'Tundra', 227500, 7500, '4 X 4')
+    truck2 = Truck('Ford', 'F150', 21478, price=50200, drive_type='AWD')
+
+    auto1 = Automobile('Honda', 'VFR', 16000, 12000)
+
+    print(car1)
+    print(car2)
+    print(suv1)
+    print(suv2)
+    print(truck1)
+    print(truck2)
+    print(auto1)
+
+
